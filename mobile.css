@@ -44,7 +44,7 @@
 
   .quiz-top {
     padding: 1rem 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
   }
   .quiz-parts {
     /* border: 1px solid red; */
@@ -65,6 +65,6 @@
     margin: 0.8rem 0;
   }
   .next {
-    margin: 1rem auto;
+    margin: 0.5rem auto;
   }
 }

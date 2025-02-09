@@ -163,7 +163,7 @@ const showFinalScore = () => {
  quizOptions.innerHTML = "";
  document.querySelector(".quiz-parts").style.display = "flex";
  let scorePercentage = Math.round(score / quizData.length * 100);
- if (scorePercentage > 50) {
+ if (scorePercentage >= 50) {
   currentQuestion.textContent = `
  You're ${scorePercentage}% a true Nigerian!!`;
  } else {
