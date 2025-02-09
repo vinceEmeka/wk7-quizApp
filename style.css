@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  text-decoration: none;
+}
+:root {
+  --background-color: #f4f4f4;
+  --primary-color: #ff5733;
+  --text-color: #2d2d2d;
+  --correct-color: #32cd32;
+  --wrong-color: #e63946;
+}
+body {
+  font-family: "Inter", serif;
+  color: var(--text-color);
+  background: var(--background-color);
+}
+
+/* ================================LOGIN PAGE STYLE  */
+main {
+  width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.heading {
+  font-family: "Montserrat", serif;
+  font-weight: 700;
+  line-height: 1rem;
+}
+
+.btn {
+  background-color: #ff5733;
+  color: white;
+  padding: 14px 20px;
+  border-radius: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.1s;
+  text-align: center;
+  width: 100%;
+}
+
+.btn:hover {
+  background-color: #e04e2c;
+}
+
+/* ================================Quiz PAGE STYLE  */
+.quiz-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.quiz-top i {
+  cursor: pointer;
+}
+
+.quiz-parts {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  /* border: 1px solid blue; */
+  /* padding: 0 2rem; */
+}
+
+.quiz-card {
+  font-family: "Montserrat", serif;
+  /* font-weight: 700; */
+  line-height: 2rem;
+  /* width: 500px; */
+  background: #fff;
+  border-radius: 10px;
+  padding: 2rem 1rem 9rem;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+  /* text-align: center; */
+}
+
+.quiz-options {
+  /* border: 1px solid red; */
+  /* width: 400px; */
+}
+
+.option {
+  /* border: 1px solid green; */
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 1rem 0;
+  margin: 1rem 0;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.option:hover {
+  background-color: #2d2d2d;
+  color: white;
+}
+
+.option input {
+  margin-top: 0px;
+  cursor: pointer;
+}
+
+.option p {
+  line-height: 1.5rem;
+  padding-left: 1rem;
+}
+
+/* .correct {
+  background-color: var(--correct-color);
+}
+
+.wrong {
+  background-color: var(--wrong-color);
+} */
+
+.next {
+  margin: 2rem auto;
+  width: 150px;
+  display: none;
+}
+
+/* ================================Score PAGE STYLE  */
+
+.final-score {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; */
+}
+.final-score-text {
+  font-weight: 900;
+  line-height: 3rem;
+  /* width: 100%; */
+}
+
+/* .reset-home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+  gap: 20px;
+} */
