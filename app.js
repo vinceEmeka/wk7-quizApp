@@ -95,7 +95,7 @@ const shuffleQuestions = () => {
 const displayQuestion = () => {
  let questionObj = quizData[currentQuestionIndex];
  currentQuestion.textContent = questionObj.question;
- questionProgress.textContent = `Question ${currentQuestionIndex + 1} of ${quizData.length}`;
+ questionProgress.textContent = `Q ${currentQuestionIndex + 1} of ${quizData.length}`;
 
  // Reset options and selection state
  quizOptions.innerHTML = "";
@@ -165,10 +165,10 @@ const showFinalScore = () => {
  let scorePercentage = Math.round(score / quizData.length * 100);
  if (scorePercentage >= 50) {
   currentQuestion.textContent = `
- You're ${scorePercentage}% a true Nigerian!!`;
+ You're ${scorePercentage}% a true Nigerian!!🟩⬜🟩`;
  } else {
   currentQuestion.textContent = `
- With ${scorePercentage}% you're not a true Nigerian!!`;
+ With ${scorePercentage}% you're not a true Nigerian!😞`;
  }
 
  quizCard.classList.add("final-score-text");
